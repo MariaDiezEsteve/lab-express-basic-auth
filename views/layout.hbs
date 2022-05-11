@@ -11,6 +11,17 @@
 
   <body>
 
+    <nav>
+      <a href="/user/signup">¡Registrate!</a>
+      <br>
+      <a href="/user/login">¡Accede!</a>
+      <br>
+
+      {{#if isAdmin}}
+      <a href="/main/private">Accede a la administración</a>
+      {{/if}}
+    </nav>
+
     {{{body}}}
 
     <script src="/js/script.js"></script>
